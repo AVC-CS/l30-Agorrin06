@@ -1,12 +1,16 @@
 def main():
-    ##################################################
-    # Complete your code here
-    ##################################################
+    while True:
+        try:
+            number = int(input("Enter an integer: "))
+            break
+        except ValueError:
+            print("Please enter a whole number.")
     
+    if number %2!=0:
+        result = 1
+    else:
+        result = 0
 
-    ########################################
-    # Do not delete the return statement
-    ########################################
     if result:
         print(f'The value {number} is an odd number')
     else:
